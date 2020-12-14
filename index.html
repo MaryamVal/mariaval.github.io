@@ -80,7 +80,7 @@
         <div>
           <div>
             <h1><span>Maria José</span><span>Valbuena</span></h1>
-            <h2> { Desarrolladora Front-End }</h2>
+            <h2>{ Desarrolladora Front-End }</h2>
           </div>
         </div>
       </header>
@@ -97,21 +97,25 @@
             </p>
             <h3>Proyectos destacados</h3>
             <dl>
-              <dt>Rediseño de web para clínica en Estados Unidos</dt>
-              <dd>InVision | Wordpress(Oxygen) | HTML5 | CSS3 | JS</dd>
+              <dt><li>Rediseño de web para clínica en Estados Unidos</li></dt>
+              <dd><li>InVision | Wordpress(Oxygen) | HTML5 | CSS3 | JS</li></dd>
             </dl>
             <dl>
-              <dt>Clon de la Homepage de Netflix</dt>
-              <dd>HTML5 | CSS3 | Bootstrap | JS</dd>
+              <dt><li>Clon de la Homepage de Netflix</li></dt>
+              <dd><li>HTML5 | CSS3 | Bootstrap | JS</li></dd>
             </dl>
             <dl>
-              <dt>Branding y E-commerce para local de comida en Indonesia</dt>
-              <dd>Illustrator | Wordpress(Oxygen) | HTML | CSS | JS</dd>
+              <dt>
+                <li>Branding y E-commerce para local de comida en Indonesia</li>
+              </dt>
+              <dd>
+                <li>Illustrator | Wordpress(Oxygen) | HTML | CSS | JS</li>
+              </dd>
             </dl>
           </section>
           <section>
             <h2>Tecnologías y herramientas</h2>
-              <ul class="col">
+            <ul class="col">
               <li>HTML5</li>
               <li>CSS3</li>
               <li>XML</li>
@@ -134,9 +138,10 @@
           <section>
             <h2>Conocimientos</h2>
             <ul class="ul">
-               <li>Mobile First Design</li>
-              <li>Responsive Web Design</li><li>UI y UX</li>
-             <li>SEO</li>
+              <li>Mobile First Design</li>
+              <li>Responsive Web Design</li>
+              <li>UI y UX</li>
+              <li>SEO</li>
               <li>Agile</li>
             </ul>
           </section>
@@ -178,7 +183,7 @@
             <ul class="ul">
               <li>
                 Alta capacidad de adaptación y aprendizaje profesional y
-                personal. 
+                personal.
               </li>
               <li>Creatividad y ambición.</li>
               <li>Colaboración y trabajo en equipo.</li>
@@ -196,15 +201,14 @@
               <li>Catalán</li>
               <li>Español</li>
               <li>Inglés</li>
-              <li> Indonesio</li>
+              <li>Indonesio</li>
             </ul>
           </section>
           <section>
             <h2>Formación</h2>
             <dl lang="ca">
-              <dt>Confecció i Publicació de págines web. – (2020)</dt>
-              <dd>Centre
-              d'Estudis Jaume Balmes</dd>
+              <dt><li>Confecció i Publicació de págines web. – (2020)</li></dt>
+              <dd><li>Centre d'Estudis Jaume Balmes</li></dd>
             </dl>
           </section>
         </div>
@@ -271,9 +275,9 @@
 
     body {
       -webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
-font-size-adjust:0.5;
-font-optical-sizing: auto;
+      -moz-osx-font-smoothing: grayscale;
+      font-size-adjust: 0.5;
+      font-optical-sizing: auto;
       display: flex;
       width: 100%;
       margin: 0 !important;
@@ -284,9 +288,14 @@ font-optical-sizing: auto;
       color: var(--black);
     }
 
-h2,h3,h4,h5,h6,li{
-    font-weight:normal;
-}
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    li {
+      font-weight: normal;
+    }
     main {
       width: 100%;
     }
@@ -330,7 +339,7 @@ h2,h3,h4,h5,h6,li{
 
     h1,
     h2 {
-      font-family: 'Calibri';
+      font-family: "Calibri";
       letter-spacing: 2px;
       text-transform: uppercase;
     }
@@ -374,7 +383,6 @@ h2,h3,h4,h5,h6,li{
       font-size: 5.8vw;
       padding-bottom: 5px;
     }
-    
 
     .content-wrapper {
       width: 100℅;
@@ -399,21 +407,20 @@ h2,h3,h4,h5,h6,li{
     .col ul li {
       display: block;
     }
-    
-   
+
     .col {
-          -webkit-columns: 2;
-    -moz-columns: 2;
-    columns: 2;
-    list-style-position: inside;
+      -webkit-columns: 2;
+      -moz-columns: 2;
+      columns: 2;
+      list-style-position: inside;
     }
 
     ul {
       list-style: none;
     }
-    
-    
-    section ul li:after {
+
+    section ul li:after,
+    dt li:after {
       content: "";
       height: 0.4em;
       width: 0.4em;
@@ -424,13 +431,12 @@ h2,h3,h4,h5,h6,li{
       top: 0.45em;
       left: 0;
     }
-    
 
     nav span,
     i a {
       color: black;
       font-size: 18px;
-      font-weight:600;
+      font-weight: 600;
       text-decoration: none;
       font-family: "Quattrocento Sans", sans-serif;
     }
@@ -458,14 +464,12 @@ h2,h3,h4,h5,h6,li{
     }
 
     /*MEDIA QUERIES*/
-    
-    
-    @media (min-width: 600px) { 
-      
+
+    @media (min-width: 600px) {
       header h2 {
-      font-size: 25px;
+        font-size: 25px;
+      }
     }
-}
     @media (min-width: 990px) {
       .content-wrapper {
         flex-direction: row;
@@ -510,47 +514,38 @@ h2,h3,h4,h5,h6,li{
         word-break: keep-all;
         word-wrap: normal;
       }
-      
+
       header h2 {
         font-size: 28px;
       }
     }
-      
- 
+
     dd {
       margin-inline-start: 0px;
     }
 
-    dt {
-      -webkit-text-stroke: black;
-      -webkit-text-stroke-width: 0.1px;
+    @-moz-document url-prefix() {
+      nav span,
+      i a,
+      i {
+        font-size: 5vw;
+      }
+
+      body {
+        font-size: 15px;
+        font-weight: normal;
+      }
+
+      @media (min-width: 600px) {
+        header h2 {
+          font-size: 23px;
+        }
+      }
+
+      nav span,
+      i a {
+        font-weight: 500;
+      }
     }
-    
-    
-    @-moz-document url-prefix() { 
-  nav span,
-    i a, i {
-     font-size: 5vw;
-  }
-  
-  body {
-     font-size: 15px;
-     font-weight:normal;
-  }
-  
-  
-    @media (min-width: 600px) { 
-      
-      header h2 {
-      font-size: 23px;
-    }
-}
-  
- nav span,
-    i a {
-    font-weight: 500;
-  }
-}
-    
   </style>
 </html>
