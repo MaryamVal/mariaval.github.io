@@ -113,7 +113,7 @@
               <dd>Illustrator | Wordpress(Oxygen) | HTML | CSS | JS</dd>
             </dl>
           </section>
-          <section>
+          <section class="inline">
             <h2>Tecnologías y herramientas</h2>
             <ul class="ul">
               <li>HTML5</li>
@@ -139,35 +139,17 @@
               <li>InVision Studio</li>
             </ul>
           </section>
-          <section>
+          <section class="inline">
             <h2>Conocimientos</h2>
             <ul class="ul">
               <li>UI y UX</li>
               <li>Mobile First Design</li>
               <li>Responsive Web Design</li>
               <li>SEO</li>
-              <li>Dark mode</li>
               <li>Agile(Scrum, Kanban)</li>
             </ul>
-            <section>
-              <h2>Aptitudes</h2>
-              <ul class="ul">
-                <li>
-                  Alta capacidad de adaptación y aprendizaje profesional y
-                  personal
-                </li>
-                <li>Creatividad y ambición.</li>
-                <li>Colaboración y trabajo en equipo.</li>
-                <li>Analisis y resolución de problemas.</li>
-                <li>Facilidad para trabajar bajo presión.</li>
-                <li>Facilidad para enseñar.</li>
-                <li>Planificación.</li>
-                <li>Automotivación y determinación.</li>
-                <li>Integridad, empatía y respeto.</li>
-              </ul>
-            </section>
           </section>
-          <section id="section1">
+          <section>
             <h2>Objetivos</h2>
             <ul class="ul">
               <li>Transformar retos en resultados positivos.</li>
@@ -182,14 +164,6 @@
                 profesional.
               </li>
             </ul>
-          </section>
-          <section>
-            <h2>OTROS DATOS</h2>
-            <p>
-              Disponibilidad hoararia de mañanas, tardes, fines de semana y
-              festivos.
-            </p>
-            <p>Trabajo tanto presencial cómo en remoto.</p>
           </section>
         </div>
         <div class="primary-content right-col">
@@ -209,6 +183,23 @@
             </p>
           </section>
           <section>
+            <h2>Aptitudes</h2>
+            <ul class="ul">
+              <li>
+                Alta capacidad de adaptación y aprendizaje profesional y
+                personal
+              </li>
+              <li>Creatividad y ambición.</li>
+              <li>Colaboración y trabajo en equipo.</li>
+              <li>Analisis y resolución de problemas.</li>
+              <li>Facilidad para trabajar bajo presión.</li>
+              <li>Facilidad para enseñar.</li>
+              <li>Planificación.</li>
+              <li>Automotivación y determinación.</li>
+              <li>Integridad, empatía y respeto.</li>
+            </ul>
+          </section>
+          <section>
             <h2>Idiomas</h2>
             <ul class="ul">
               <li>Català</li>
@@ -223,6 +214,14 @@
               <dt>Confecció i Publicació de págines web. – (2020)</dt>
               <dd>Centre d'Estudis Jaume Balmes</dd>
             </dl>
+          </section>
+          <section>
+            <h2>OTROS DATOS</h2>
+            <p>
+              Disponibilidad hoararia de mañanas, tardes, fines de semana y
+              festivos.
+            </p>
+            <p>Trabajo tanto presencial cómo en remoto.</p>
           </section>
         </div>
       </div>
@@ -294,7 +293,7 @@
       margin: 0 !important;
       text-align: left;
       font-family: "Quattrocento Sans", sans-serif;
-      font-size: 1rem;
+      font-size: 1.15rem;
       background-color: var(--white);
       color: var(--black);
     }
@@ -307,7 +306,6 @@
     header {
       display: flex;
       flex-direction: column;
-      font-size: 25px;
       color: rgb(255, 255, 255);
       background-color: var(--black);
       height: 70vh;
@@ -333,10 +331,10 @@
       background-color: var(--black);
       width: 100%;
       justify-content: center;
-      font-size: 1.2rem;
       text-align: center;
       word-break: keep-all;
       word-wrap: normal;
+      padding: 0px 20px;
     }
 
     h1,
@@ -358,22 +356,20 @@
       color: var(--black);
       -webkit-text-stroke-color: var(--accentwhite);
       -webkit-text-stroke-width: 0.4px;
-      font-size: 24px;
+      font-size: 27px;
       font-family: "Quattrocento Sans";
     }
     header > div:last-of-type span:first-of-type {
       color: var(--accent1);
-      -webkit-text-stroke: var(--accent1);
       display: block;
       -webkit-text-stroke-width: 1px;
       line-height: 26.4px;
-      font-size: 33px;
     }
 
     header > div:last-of-type span:last-of-type {
       color: var(--accent2);
       display: block;
-      font-size: 29px;
+      font-size: 39px;
     }
 
     nav {
@@ -401,7 +397,11 @@
       list-style: none;
       word-break: normal;
       position: relative;
-      padding-left: 1.5em;
+      padding: 0 1em;
+    }
+
+    .inline ul li {
+      display: inline;
     }
 
     ul {
@@ -415,14 +415,14 @@
       display: block;
       position: absolute;
       transform: rotate(45deg);
-      top: 0.25em;
+      top: 0.45em;
       left: 0;
     }
 
     nav span,
     i a {
       color: black;
-      font-size: 14px;
+      font-size: 18px;
       font-weight: 900;
       text-decoration: none;
       font-family: "Quattrocento Sans", sans-serif;
@@ -432,7 +432,7 @@
       display: block;
       margin-right: 5px;
       color: black;
-      font-size: 18px;
+      font-size: 22px;
     }
 
     i > span,
@@ -452,7 +452,7 @@
 
     /*MEDIA QUERIES*/
 
-    @media (min-width: 680px) {
+    @media (min-width: 660px) {
       .content-wrapper {
         flex-direction: row;
       }
