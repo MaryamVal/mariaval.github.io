@@ -80,7 +80,7 @@
         <div>
           <div>
             <h1><span>Maria José</span><span>Valbuena</span></h1>
-            <h2> <span> { Desarrolladora</span> <span>Front-End }</span></h2>
+            <h2> { Desarrolladora Front-End }</h2>
           </div>
         </div>
       </header>
@@ -105,13 +105,13 @@
               <dd>HTML5 | CSS3 | Bootstrap | JS</dd>
             </dl>
             <dl>
-              <dt>Branding e E-commerce para local de comida en Indonesia</dt>
+              <dt>Branding y E-commerce para local de comida en Indonesia</dt>
               <dd>Illustrator | Wordpress(Oxygen) | HTML | CSS | JS</dd>
             </dl>
           </section>
-          <section class="inline">
+          <section>
             <h2>Tecnologías y herramientas</h2>
-            <ul class="ul">
+              <ul class="col">
               <li>HTML5</li>
               <li>CSS3</li>
               <li>XML</li>
@@ -131,7 +131,7 @@
               <li>InVision Studio</li>
             </ul>
           </section>
-          <section class="inline">
+          <section>
             <h2>Conocimientos</h2>
             <ul class="ul">
                <li>Mobile First Design</li>
@@ -365,11 +365,11 @@ h2,h3,h4,h5,h6,li{
       text-align: center;
     }
 
-    header h2 span, header h2 span:last-of-type  {
+    header h2 {
       color: var(--accent1);
       text-transform: capitalize;
       font-weight: 500;
-      font-size: 20px;
+      font-size: 15px;
     }
     
 
@@ -393,13 +393,23 @@ h2,h3,h4,h5,h6,li{
       padding: 0 1em;
     }
 
-    .inline ul li {
-      display: inline-block;
+    .col ul li {
+      display: block;
+    }
+    
+   
+    .col {
+          -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2;
+    list-style-position: inside;
     }
 
     ul {
       list-style: none;
     }
+    
+    
     section ul li:after {
       content: "";
       height: 0.4em;
