@@ -8,21 +8,34 @@
       content="Currículum Vitae de Maria José Valbuena, desarrolladora web especializada en front end"
     />
     <title>
-      Maria José Valbuena | <span lang="en">Front-End Developer</span>
-      <abbr>CV</abbr>
+      Maria José Valbuena | Front-End Developer CV
     </title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@300;600&family=Quattrocento+Sans&display=swap"
-      rel="stylesheet"
+      rel="preload"
+      href="https://fonts.googleapis.com/css?family=Quattrocento+Sans:wght@700&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css?family=Quattrocento+Sans:wght@700&display=swap"
+        rel="stylesheet"
+        type="text/css"
+      />
+    </noscript>
     <link
-      href="https://fonts.googleapis.com/css2?family=Volkhov&display=swap"
-      rel="stylesheet"
+      rel="preload"
+      href="https://fonts.googleapis.com/css?family=Volkhov&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-    />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css?family=Volkhov&display=swap"
+        rel="stylesheet"
+        type="text/css"
+      />
+    </noscript>
   </head>
   <body>
     <main>
@@ -54,11 +67,13 @@
                   </a></i
                 >
               </li>
-              <i class="fab fa-github"
-                ><a class="links" href="https://github.com/MaryamVal"
-                  >Github</a
-                ></i
-              >
+              <li>
+                <i class="fab fa-github"
+                  ><a class="links" href="https://github.com/MaryamVal"
+                    >MaryamVal</a
+                  ></i
+                >
+              </li>
             </ul>
           </nav>
         </div>
@@ -74,22 +89,28 @@
           <section>
             <h2>Experiencia</h2>
             <p>
-              Experiencia en diseño, maquetación y creación de páginas webs para
+              Experiencia en diseño, maquetación y creación de páginas web para
               clientes nacionales e internacionales, basadas en el diseño
-              responsive, cross-browser y mobile-first.
+              responsive (cross-browser y mobile-first). Mi finalidad es
+              conseguir siempre un diseño limpio y atractivo y accesible, sin
+              comprometer buenas prácticas, velocidad de carga y SEO.
             </p>
             <h3>Proyectos destacados</h3>
             <dl>
               <dt>Rediseño de web para clínica en Estadus Unidos</dt>
+              <dd>InVision | Wordpress(Oxygen) | HTML5 | CSS3 | JS</dd>
             </dl>
             <dl>
               <dt>One-page para clínica en Estados unidos</dt>
+              <dd>Figma | Wordpress(Oxygen) | HTML5 | CSS3 | JS</dd>
             </dl>
             <dl>
               <dt>Clon de la Homepage de Netflix</dt>
+              <dd>HTML5 | CSS3 | Bootstrap | JS</dd>
             </dl>
             <dl>
-              Branding e E-commerce para local de comida en Indonesia
+              <dt>Branding e E-commerce para local de comida en Indonesia</dt>
+              <dd>Illustrator | Wordpress(Oxygen) | HTML | CSS | JS</dd>
             </dl>
           </section>
           <section>
@@ -135,27 +156,27 @@
                   Alta capacidad de adaptación y aprendizaje profesional y
                   personal
                 </li>
-                <li>Creatividad y ambición</li>
-                <li>Colaboración y trabajo en equipo</li>
-                <li>Analisis y resolución de problemas</li>
-                <li>Facilidad para trabajar bajo presión</li>
-                <li>Facilidad para enseñar</li>
-                <li>Planificación</li>
-                <li>Automotivación y determinación</li>
-                <li>Integridad, empatía y respeto</li>
+                <li>Creatividad y ambición.</li>
+                <li>Colaboración y trabajo en equipo.</li>
+                <li>Analisis y resolución de problemas.</li>
+                <li>Facilidad para trabajar bajo presión.</li>
+                <li>Facilidad para enseñar.</li>
+                <li>Planificación.</li>
+                <li>Automotivación y determinación.</li>
+                <li>Integridad, empatía y respeto.</li>
               </ul>
             </section>
           </section>
           <section id="section1">
             <h2>Objetivos</h2>
             <ul class="ul">
+              <li>Transformar retos en resultados positivos.</li>
               <li>
-                Permitir que mis habilidades crezcan mientras disfruto
-                aprendiendo
+                Mantener un ritmo de trabajo constante y efectivo gracias al
+                trabajo en equipo.
               </li>
-              <li>Transformar los retos en resultados positivos.</li>
               <li>Contribuir a un buen ambiente de trabajo.</li>
-              <li>Trabajar por la satisfacción del cliente en todo momento</li>
+              <li>Trabajar por la satisfacción del cliente en todo momento.</li>
               <li>
                 Adquirir experiencia y práctica para mi progreso personal y
                 profesional.
@@ -168,7 +189,7 @@
               Disponibilidad hoararia de mañanas, tardes, fines de semana y
               festivos.
             </p>
-            <p>Trabajo tanto presencial cómo en remoto</p>
+            <p>Trabajo tanto presencial cómo en remoto.</p>
           </section>
         </div>
         <div class="primary-content right-col">
@@ -206,6 +227,25 @@
         </div>
       </div>
     </main>
+    <script type="text/javascript">
+      //<![CDATA[
+      function loadCSS(e, t, n) {
+        "use strict";
+        var i = window.document.createElement("link");
+        var o = t || window.document.getElementsByTagName("script")[0];
+        i.rel = "stylesheet preconnect";
+        i.href = e;
+        i.media = "only x";
+        o.parentNode.insertBefore(i, o);
+        setTimeout(function () {
+          i.media = n || "all";
+        });
+      }
+      loadCSS(
+        "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      );
+      //]]>
+    </script>
   </body>
   <style>
     :root {
@@ -218,6 +258,7 @@
       --white: #ffffff;
       --color1: #f3deee;
       --color2: #fff1dc;
+      --accentwhite: #ececec;
       --accent1: #e9cbe2;
       --accent2: #ffe5be;
     }
@@ -249,7 +290,7 @@
     body {
       display: flex;
       width: 100%;
-      height: auto;
+      height: 100vh;
       margin: 0 !important;
       text-align: left;
       font-family: "Quattrocento Sans", sans-serif;
@@ -260,6 +301,7 @@
 
     main {
       width: 100%;
+      height: 100%;
     }
 
     header {
@@ -313,8 +355,8 @@
     }
 
     main h2 {
-      color: #ececec;
-      -webkit-text-stroke-color: var(--black);
+      color: var(--black);
+      -webkit-text-stroke-color: var(--accentwhite);
       -webkit-text-stroke-width: 0.4px;
       font-size: 24px;
       font-family: "Quattrocento Sans";
@@ -358,6 +400,23 @@
     li {
       list-style: none;
       word-break: normal;
+      position: relative;
+      padding-left: 1.5em;
+    }
+
+    ul {
+      list-style: none;
+    }
+    section ul li:after {
+      content: "";
+      height: 0.4em;
+      width: 0.4em;
+      background: var(--accent1);
+      display: block;
+      position: absolute;
+      transform: rotate(45deg);
+      top: 0.25em;
+      left: 0;
     }
 
     nav span,
@@ -409,8 +468,8 @@
       }
 
       .right-col h2 {
-        -webkit-text-stroke-color: var(--black);
-        color: var(--accent2);
+        -webkit-text-stroke-color: var(--accent2);
+        color: var(--black);
       }
 
       header {
@@ -437,6 +496,15 @@
         word-break: keep-all;
         word-wrap: normal;
       }
+    }
+    dd {
+      margin-inline-start: 0px;
+    }
+
+    dt {
+      font-weight: 700;
+      -webkit-text-stroke: black;
+      -webkit-text-stroke-width: 0.1px;
     }
   </style>
 </html>
