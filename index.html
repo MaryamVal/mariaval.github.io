@@ -80,7 +80,7 @@
         <div>
           <div>
             <h1><span>Maria José</span><span>Valbuena</span></h1>
-            <h2>{ Desarrolladora Front-end }</h2>
+            <h2> <span> { Desarrolladora</span> <span>Front-End }</span></h2>
           </div>
         </div>
       </header>
@@ -355,7 +355,7 @@ h2,h3,h4,h5,h6,li{
       line-height: 26.4px;
     }
 
-    header > div:last-of-type span:last-of-type {
+    header > div:last-of-type h1 span:last-of-type {
       color: var(--accent2);
       display: block;
       font-size: 39px;
@@ -365,13 +365,13 @@ h2,h3,h4,h5,h6,li{
       text-align: center;
     }
 
-    header h2 {
+    header h2 span, header h2 span:last-of-type  {
       color: var(--accent1);
       text-transform: capitalize;
       font-weight: 500;
       font-size: 20px;
-      padding-bottom: 20px;
     }
+    
 
     .content-wrapper {
       width: 100℅;
@@ -490,7 +490,12 @@ h2,h3,h4,h5,h6,li{
         word-break: keep-all;
         word-wrap: normal;
       }
+      
+ header h2 span:last-of-type {
+   display:inline-block;
+ }
     }
+ 
     dd {
       margin-inline-start: 0px;
     }
