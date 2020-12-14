@@ -272,12 +272,14 @@
     body {
       -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
+font-size-adjust:0.5;
+font-optical-sizing: auto;
       display: flex;
       width: 100%;
       margin: 0 !important;
       text-align: left;
       font-family: "Quattrocento Sans", sans-serif;
-      font-size: 1.05rem;
+      font-size: 18px;
       background-color: var(--white);
       color: var(--black);
     }
@@ -515,5 +517,23 @@ h2,h3,h4,h5,h6,li{
       -webkit-text-stroke: black;
       -webkit-text-stroke-width: 0.1px;
     }
+    
+    @-moz-document url-prefix() { 
+  nav span,
+    i a, i {
+     font-size: 17px;
+  }
+  
+  body {
+     font-size: 15px;
+     font-weight:normal;
+  }
+  
+ nav span,
+    i a {
+    font-weight: 500;
+  }
+}
+    
   </style>
 </html>
